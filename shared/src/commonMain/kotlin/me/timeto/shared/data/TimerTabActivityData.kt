@@ -17,6 +17,7 @@ class TimerTabActivityData(
         TimerDataUI(
             interval = lastInterval,
             isPurple = isPurple,
+            todayTasks = DI.tasks.filter { it.isToday }
         )
     }
 
